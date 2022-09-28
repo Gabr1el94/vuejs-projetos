@@ -27,12 +27,12 @@
     data () {
       return {
         email: '',
-        senha: '',
+        senha: ''
       };
     },
     methods: {
       signUp () {
-
+        this.usuarios.push({email:this.email, senha:this.senha});
       },
     },
   };
