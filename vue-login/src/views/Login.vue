@@ -36,7 +36,16 @@
     },
     methods: {
         login: function() {
-
+          this.usuarios.forEach(usuario => {
+            if (usuario.email==='' && usuario.senha==='') {
+              alert("Prencher Campos obrigatório");
+            }
+            if (usuario.email===this.email && usuario.senha===this.senha) {
+              alert("Acesso permitido");
+            } else {
+              alert("Acesso Negado");
+            }
+          });
         }
       }
     }

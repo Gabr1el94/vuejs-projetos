@@ -32,6 +32,7 @@
     },
     methods: {
       signUp () {
+        alert("Usuário "+this.email+" cadastrado com sucesso!");
         this.usuarios.push({email:this.email, senha:this.senha});
       },
     },
