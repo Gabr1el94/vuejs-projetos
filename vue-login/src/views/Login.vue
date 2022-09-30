@@ -42,6 +42,7 @@
             }
             if (usuario.email===this.email && usuario.senha===this.senha) {
               alert("Acesso permitido");
+              this.$router.push('/home')
             } else {
               alert("Acesso Negado");
             }
